@@ -15,17 +15,17 @@ def README_mode():
     text.pack()
 
     # ショートカットボタン
-    shortcut_button1 = tk.Button(root, text="見出し1", command=lambda: shortcut(1))
+    shortcut_button1 = tk.Button(root, text="見出し1", command=lambda: shortcut(1), width=10)
     shortcut_button1.pack(side=tk.LEFT)
-    shortcut_button2 = tk.Button(root, text="見出し2", command=lambda: shortcut(2))
+    shortcut_button2 = tk.Button(root, text="見出し2", command=lambda: shortcut(2), width=10)
     shortcut_button2.pack(side=tk.LEFT)
-    shortcut_button3 = tk.Button(root, text="見出し3", command=lambda: shortcut(3))
+    shortcut_button3 = tk.Button(root, text="見出し3", command=lambda: shortcut(3), width=10)
     shortcut_button3.pack(side=tk.LEFT)
-    shortcut_button4 = tk.Button(root, text="箇条書き", command=lambda: shortcut(4))
+    shortcut_button4 = tk.Button(root, text="箇条書き", command=lambda: shortcut(4), width=10)
     shortcut_button4.pack(side=tk.LEFT)
 
     # 保存ボタン
-    save_button = tk.Button(root, text="保存", command=lambda: save_text())
+    save_button = tk.Button(root, text="保存", command=lambda: save_text(), width=10)
     save_button.pack(side=tk.LEFT)
 
     def insert_template(template):
